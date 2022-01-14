@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        \#\#\# Please note the following potential times when an issue might be in Terraform core:
+        "### Please note the following potential times when an issue might be in Terraform core:"
 
         * [Configuration Language](https://www.terraform.io/docs/configuration/index.html) or resource ordering issues
         * [State](https://www.terraform.io/docs/state/index.html) and [State Backend](https://www.terraform.io/docs/backends/index.html) issues
@@ -17,8 +17,8 @@ body:
         If you are running into one of these scenarios, we recommend opening an issue in the [Terraform core repository](https://github.com/hashicorp/terraform/) instead.
   - type: textarea
     attributes:
-      label: "Community Note"
-      description: "Please leave this note as is for the community"
+      label: Community Note
+      description: Please leave this note as is for the community
       value: |
         * Please vote on this issue by adding a 👍 [reaction](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) to the original issue to help the community and maintainers prioritize this request
         * Please do not leave "+1" or other comments that do not add relevant new information or questions, they generate extra noise for issue followers and do not help prioritize the request
@@ -27,66 +27,72 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: "Terraform CLI and Terraform AWS Provider Version"
-      description: "Please run `terraform -v` to show the Terraform core version and provider version(s). If you are not running the latest version of Terraform or the provider, please upgrade because your issue may have already been fixed. [Terraform documentation on provider versioning](https://www.terraform.io/docs/configuration/providers.html#provider-versions)."
-      placeholder: |
-        Terraform:\n
-        AWS Provder:
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: "Affected Resource(s)"
-      description: "Please list the affected resources and data sources."
-      placeholder: |
-        * aws_XXXXX
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: "Terraform Configuration Files"
+      label: Terraform CLI and Terraform AWS Provider Version
       description: |
-        Please include all Terraform configurations required to reproduce the bug. Bug reports without a functional reproduction may be closed without investigation. [Information about code formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code)
+        Please run `terraform -v` to show the Terraform core version and provider version(s). If you are not running the latest version of Terraform or the provider, please upgrade because your issue may have already been fixed.
 
-        Testing to see if this also formats correctly
+        [Terraform documentation on provider versioning](https://www.terraform.io/docs/configuration/providers.html#provider-versions).
     validations:
       required: true
   - type: textarea
     attributes:
-      label: "Debug Output"
-      description: "Please provide a link to a GitHub Gist containing the complete debug output. Please do NOT paste the debug output in the issue; just paste a link to the Gist. To obtain the debug output, see the [Terraform documentation on debugging](https://www.terraform.io/docs/internals/debugging.html)."
+      label: Affected Resource(s)
+      description: Please list the affected resources and data sources.
+      placeholder: |
+        * `aws_XXXXX`
     validations:
       required: true
   - type: textarea
     attributes:
-      label: "Panic Output"
-      description: "If Terraform produced a panic, please provide a link to a GitHub Gist containing the output of the `crash.log`."
-  - type: textarea
-    attributes:
-      label: "Expected Behavior"
-      description: "What should have happened?"
+      label: Terraform Configuration Files
+      description: |
+        Please include all Terraform configurations required to reproduce the bug. Bug reports without a functional reproduction may be closed without investigation.
+
+        For large Terraform configurations, please use a service like Dropbox and share a link to the ZIP file. For your security you can also encrypt the files using our (GPG public key)[https://keybase.io/hashicorp].
+
+        [Information about code formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code).
     validations:
       required: true
   - type: textarea
     attributes:
-      label: A"ctual Behavior"
-      description: "What actually happened?"
+      label: Debug Output
+      description: |
+        Please provide a link to a GitHub Gist containing the complete debug output. Please do NOT paste the debug output in the issue; just paste a link to the Gist. To obtain the debug output, see the [Terraform documentation on debugging](https://www.terraform.io/docs/internals/debugging.html).
     validations:
       required: true
   - type: textarea
     attributes:
-      label: "Steps to Reproduce"
-      description: "Please list the steps required to reproduce the issue."
-      placeholder: "1. `terraform apply`"
+      label: Panic Output
+      description: If Terraform produced a panic, please provide a link to a GitHub Gist containing the output of the `crash.log`.
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
     validations:
       required: true
   - type: textarea
     attributes:
-      label: "Important Factoids"
-      description: "Are there anything atypical about your accounts that we should know?"
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: Please list the steps required to reproduce the issue.
+      placeholder: 1. `terraform apply`
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Important Factoids
+      description: Are there anything atypical about your accounts that we should know?
       placeholder: "Example: Running in EC2 Classic"
   - type: textarea
     attributes:
-      label: "References"
-      description: "Are there any other GitHub issues (open or closed) or pull requests that should be linked here? Vendor documentation? [Information about referencing Github Issues](https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests)"
+      label: References
+      description: |
+        Are there any other GitHub issues (open or closed) or pull requests that should be linked here? Vendor documentation?
+
+        [Information about referencing Github Issues](https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests)
       placeholder: "* #0000"
