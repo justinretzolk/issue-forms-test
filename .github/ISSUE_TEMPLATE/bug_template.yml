@@ -5,7 +5,7 @@ labels: ["needs-triage"]
 body:
   - type: markdown
     attributes:
-      value: "### Please note the following potential times when an issue might be in Terraform core:"
+      value: "## Please note the following potential times when an issue might be in Terraform core:"
   - type: markdown
     attributes:
       value: |
@@ -58,7 +58,9 @@ body:
     attributes:
       label: Debug Output
       description: |
-        Please provide a link to a GitHub Gist containing the complete debug output. Please do NOT paste the debug output in the issue; just paste a link to the Gist. To obtain the debug output, see the [Terraform documentation on debugging](https://www.terraform.io/docs/internals/debugging.html).
+        Please provide a link to a GitHub Gist containing the complete debug output. Please do NOT paste the debug output in the issue; just paste a link to the Gist.
+
+        To obtain the debug output, see the [Terraform documentation on debugging](https://www.terraform.io/docs/internals/debugging.html).
     validations:
       required: true
   - type: textarea
