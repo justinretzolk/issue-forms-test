@@ -45,13 +45,7 @@ body:
   - type: textarea
     attributes:
       label: "Terraform Configuration Files"
-      description: "Please include all Terraform configurations required to reproduce the bug. Bug reports without a functional reproduction may be closed without investigation. [Information about code formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code)"
-      placeholder: |
-        ```hcl\n
-        \# Copy-paste your Terraform configurations here - for large Terraform configs,\n
-        \# please use a service like Dropbox and share a link to the ZIP file. For\n
-        \# security, you can also encrypt the files using our GPG public key: https://keybase.io/hashicorp\n
-        ```
+      description: "Please include all Terraform configurations required to reproduce the bug. Bug reports without a functional reproduction may be closed without investigation. [Information about code formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code)\n\n Does this make a newline?"
     validations:
       required: true
   - type: textarea
