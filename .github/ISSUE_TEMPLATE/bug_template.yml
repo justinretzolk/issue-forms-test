@@ -5,9 +5,10 @@ labels: ["needs-triage"]
 body:
   - type: markdown
     attributes:
+      value: "### Please note the following potential times when an issue might be in Terraform core:"
+  - type: markdown
+    attributes:
       value: |
-        "### Please note the following potential times when an issue might be in Terraform core:"
-
         * [Configuration Language](https://www.terraform.io/docs/configuration/index.html) or resource ordering issues
         * [State](https://www.terraform.io/docs/state/index.html) and [State Backend](https://www.terraform.io/docs/backends/index.html) issues
         * [Provisioner](https://www.terraform.io/docs/provisioners/index.html) issues
@@ -48,7 +49,7 @@ body:
       description: |
         Please include all Terraform configurations required to reproduce the bug. Bug reports without a functional reproduction may be closed without investigation.
 
-        For large Terraform configurations, please use a service like Dropbox and share a link to the ZIP file. For your security you can also encrypt the files using our (GPG public key)[https://keybase.io/hashicorp].
+        For large Terraform configurations, please use a service like Dropbox and share a link to the ZIP file. For your security you can also encrypt the files using our [GPG public key](https://keybase.io/hashicorp).
 
         [Information about code formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code).
     validations:
