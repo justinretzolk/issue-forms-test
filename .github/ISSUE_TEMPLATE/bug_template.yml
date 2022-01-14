@@ -39,8 +39,6 @@ body:
     attributes:
       label: Affected Resource(s)
       description: Please list the affected resources and data sources.
-      placeholder: |
-        * `aws_XXXXX`
     validations:
       required: true
   - type: textarea
@@ -83,14 +81,12 @@ body:
     attributes:
       label: Steps to Reproduce
       description: Please list the steps required to reproduce the issue.
-      placeholder: 1. `terraform apply`
     validations:
       required: true
   - type: textarea
     attributes:
       label: Important Factoids
       description: Are there anything atypical about your accounts that we should know?
-      placeholder: "Example: Running in EC2 Classic"
   - type: textarea
     attributes:
       label: References
@@ -98,4 +94,3 @@ body:
         Are there any other GitHub issues (open or closed) or pull requests that should be linked here? Vendor documentation?
 
         [Information about referencing Github Issues](https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests)
-      placeholder: "* #0000"
