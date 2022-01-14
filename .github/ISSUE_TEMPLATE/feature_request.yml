@@ -22,7 +22,7 @@ body:
   - type: textarea
     attributes:
       label: New or Affected Resource(s)
-      description: Please list the new or affected resources and data sources.
+      description: Please list the new or affected resource(s) and/or data source(s).
     validations:
       required: true
   - type: textarea
