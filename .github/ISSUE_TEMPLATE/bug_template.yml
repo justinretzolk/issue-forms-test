@@ -43,6 +43,18 @@ body:
       required: true
   - type: textarea
     attributes:
+      label: Expected Behavior
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
       label: Terraform Configuration Files
       description: |
         Please include all Terraform configurations required to reproduce the bug. Bug reports without a functional reproduction may be closed without investigation.
@@ -65,18 +77,6 @@ body:
     attributes:
       label: Panic Output
       description: If Terraform produced a panic, please provide a link to a GitHub Gist containing the output of the `crash.log`.
-  - type: textarea
-    attributes:
-      label: Expected Behavior
-      description: What should have happened?
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Actual Behavior
-      description: What actually happened?
-    validations:
-      required: true
   - type: textarea
     attributes:
       label: Steps to Reproduce
