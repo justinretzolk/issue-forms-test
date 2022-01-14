@@ -45,7 +45,10 @@ body:
   - type: textarea
     attributes:
       label: "Terraform Configuration Files"
-      description: "Please include all Terraform configurations required to reproduce the bug. Bug reports without a functional reproduction may be closed without investigation. [Information about code formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code)\n\n Does this make a newline?"
+      description: |
+        Please include all Terraform configurations required to reproduce the bug. Bug reports without a functional reproduction may be closed without investigation. [Information about code formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code)
+
+        Testing to see if this also formats correctly
     validations:
       required: true
   - type: textarea
