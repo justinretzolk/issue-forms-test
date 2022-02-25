@@ -34,14 +34,15 @@ body:
 
         [Terraform documentation on provider versioning](https://www.terraform.io/docs/configuration/providers.html#provider-versions).
       placeholder: |
-        - Terraform: 1.1.6
-        - AWS Provider: 4.2.0
+        * Terraform: 1.1.6
+        * AWS Provider: 4.2.0
     validations:
       required: true
   - type: textarea
     attributes:
       label: Affected Resource(s)
       description: Please list the affected resource(s) and/or data source(s).
+      placeholder: "* aws_xxx"
     validations:
       required: true
   - type: textarea
@@ -65,6 +66,10 @@ body:
         For large Terraform configurations, please use a service like Dropbox and share a link to the ZIP file. For your security you can also encrypt the files using our [GPG public key](https://keybase.io/hashicorp).
 
         [Information about code formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code).
+      placeholder: |
+        ```hcl
+        provider "aws" {}
+        ```
     validations:
       required: true
   - type: textarea
@@ -84,6 +89,8 @@ body:
     attributes:
       label: Steps to Reproduce
       description: Please list the steps required to reproduce the issue.
+      placeholder: |
+        1) Run `terraform apply`
     validations:
       required: true
   - type: textarea
