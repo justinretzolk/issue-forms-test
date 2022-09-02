@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        # Thank you for opening a feature request!
+        # Thank you for opening an enhancement request!
 
         This form is intended as a way to request additional functionality for existing resources, data sources, or the provider itself. This may include requests such as adding additional arguments or attributes enabled by upstream API changes, additional validation for arguments, etc.
         

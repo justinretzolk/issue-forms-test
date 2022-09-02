@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        # Thank you for opening a bug report!
+        # Thank you for raising a bug report!
 
         Before submitting a bug report, we ask that you first search existing issues to see if someone else may have experienced the same issue. This helps to keep all relevant information in one place, including any potential workarounds.
 

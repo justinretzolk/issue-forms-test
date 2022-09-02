@@ -1,0 +1,30 @@
+name: "Repository/Meta"
+description: Choose this option when the issue has to do with the repository itself, including GitHub Actions.
+title: "[Repo]: "
+labels: ["repository", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Thank you for opening an issue!
+
+        This form is for issues pertaining to the repository itself. This might include changes to GitHub Actions, labels, procedures, etc. For issues with the contribution documentation, please use the "Report a Documentation Error" form.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please leave a brief description of the issue or proposed change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: |
+        Where possible, please supply links to vendor documentation, other GitHub issues (open or closed) or pull requests that give additional context.
+
+        [Information about referencing Github Issues](https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests)
+    validations:
+      required: false
