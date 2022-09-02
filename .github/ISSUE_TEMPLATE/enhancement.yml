@@ -46,18 +46,20 @@ body:
     attributes:
       label: References
       description: |
-        Are there any other GitHub issues (open or closed) or pull requests that should be linked here? Vendor documentation?
+        Where possible, please supply links to vendor documentation, other GitHub issues (open or closed) or pull requests that give additional context.
 
         [Information about referencing Github Issues](https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests)
     validations:
       required: false
-
+      
   - type: checkboxes
     id: will_contribute
     attributes:
-      label: Would you like to implement this yourself?
+      label: Would you like to implement this?
       description: |
-        If you plan to implement this feature yourself, check this box to let the maintainers and community know so that two contributors don't separately begin work on implementation. You can update this later if you change your mind.
+        If you plan to implement this feature yourself, check this box to let the maintainers and community know (you can update this later if you change your mind).
+
+        If this would be your first contribution, refer to the [contribution guide](https://hashicorp.github.io/terraform-provider-aws/) for tips on getting started.
       options:
-        - label: I would like to implement this myself.
+        - label: I would like to work on this.
           required: false
