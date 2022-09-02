@@ -1,5 +1,5 @@
-name: "Enhancement Request"
-description: "Request an enhancement to an existing resource, data source, or the provider itself."
+name: "Request an Enhancement"
+description: "Choose this option when you would like to request an enhancement to an existing resource, data source, or the provider itself."
 title: "[Enhancement]: "
 labels: ["enhancement", "needs-triage"]
 body:
@@ -16,7 +16,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: Please leave a helpful description of the feature request here.
+      description: Please leave a brief description of the feature request.
     validations:
       required: true
   
@@ -25,7 +25,7 @@ body:
     attributes:
       label: Affected Resource(s)
       description: Please list the new or affected resource(s) and/or data source(s). If the request is for the provider itself, "provider" will suffice.
-      placeholder: "* aws_xxx"
+      placeholder: "* aws_xxx_yyy"
     validations:
       required: true
   
@@ -34,7 +34,7 @@ body:
     attributes:
       label: Potential Terraform Configuration
       description: |
-        If this request was implemented, what might the Terraform configuration look like? A best guess is helpful, even if you're unsure of exactly what the end result will look like. This helps maintainers and the community better understand your idea.
+        If this request was implemented, what might the Terraform configuration look like? A best guess is helpful, even if you're unsure of exactly what the end result will look like. This helps maintainers and the community better understand how you, someone who is in need of this feature, envisions it.
 
         **Note:** This field will render in HCL, so there is no need to add a [code fence](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
       render: terraform
