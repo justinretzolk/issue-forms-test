@@ -8,33 +8,32 @@ body:
       value: |
         # Thank you for opening a feature request!
 
-        This form is intended as a way to request additional functionality for existing resources, data sources, or the provider itself. This may include requests such as, adding additional arguments or attributes enabled by upstream API changes, additional validation for arguments, etc.
+        This form is intended as a way to request additional functionality for existing resources, data sources, or the provider itself. This may include requests such as adding additional arguments or attributes enabled by upstream API changes, additional validation for arguments, etc.
         
-        If the absense of the requested feature is causing unexpected behavior in the provider, it should instead be filed under the "Bug Report" template. For entirely new resources, data sources, or services, please use the "New Resource/Data Source/Service" template.
+        If the absense of the requested feature is causing unexpected behavior in the provider, the "Report a Bug" form should be used. For entirely new resources, data sources, or services, please use the Request a "New Resource, Data Source, or AWS Service" form.
 
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: Please leave a brief description of the feature request.
+      description: Please leave a brief description of the requested change.
     validations:
       required: true
   
   - type: textarea
     id: affected
     attributes:
-      label: Affected Resource(s)
-      description: Please list the new or affected resource(s) and/or data source(s). If the request is for the provider itself, "provider" will suffice.
+      label: Affected Resource(s) and/or Data Source(s)
       placeholder: "* aws_xxx_yyy"
     validations:
-      required: true
+      required: false
   
   - type: textarea
     id: tf_config
     attributes:
       label: Potential Terraform Configuration
       description: |
-        If this request was implemented, what might the Terraform configuration look like? A best guess is helpful, even if you're unsure of exactly what the end result will look like. This helps maintainers and the community better understand how you, someone who is in need of this feature, envisions it.
+        If this request was implemented, what might the Terraform configuration look like? A best guess is helpful, even if you're unsure of exactly what the end result will look like. This helps maintainers and the community better understand how you (someone who is in need of this feature) envisions it.
 
         **Note:** This field will render in HCL, so there is no need to add a [code fence](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
       render: terraform

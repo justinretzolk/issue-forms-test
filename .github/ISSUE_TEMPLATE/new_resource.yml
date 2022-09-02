@@ -8,9 +8,9 @@ body:
       value: |
         # Thank you for opening a request!
 
-        This form is intended to be used when requesting an entirely new resource, data source, or service be added to the provider. If you're looking for a change to be made to an existing resource or data source, consider submitting either the "Enhancement" or "Bug Report" forms instead.
+        This form is intended to be used when requesting an entirely new resource, data source, or service be added to the provider. If you're looking for a change to be made to an existing resource or data source, consider submitting either the "Request an Enhancement" or Report a Bug" forms instead.
 
-        When possible, it's helpful to check the [AWS Go SDK](https://pkg.go.dev/github.com/aws/aws-sdk-go/service) or [AWS Go SDK v2](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2#section-directories) to determine whether functionality exists to enable the requested feature. It is **not** required that you do this check. Any references found when searching can be added to the "References" field below to give maintainers or the community a head start.
+        When possible, it's helpful to check the [AWS Go SDK](https://pkg.go.dev/github.com/aws/aws-sdk-go/service) or [AWS Go SDK v2](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2#section-directories) to determine whether functionality exists to enable the requested feature. It is **not** required that you do this. Any references found when searching can be added to the "References" field below to give maintainers or the community a head start.
 
   - type: textarea
     id: description
@@ -25,7 +25,9 @@ body:
     attributes:
       label: Requested Resource(s) and/or Data Source(s)
       description: |
-        Please list any new resource(s) and/or data source(s). The naming scheme is `aws_<service>_<resource>`, e.g., `aws_lambda_function`. A best guess is helpful, even if you're unsure of exactly what the end result will look like. This helps maintainers and the community better understand how you, someone who is in need of this request, envisions it.
+        Please list any new resource(s) and/or data source(s). The naming format is `aws_<service>_<resource_name>`, e.g., `aws_lambda_function`. 
+        
+        A best guess is helpful, even if you're unsure of exactly what the end result will look like. This helps maintainers and the community better understand how you (someone who is in need of this request) envisions it.
       placeholder: "* aws_xxx_yyy"
     validations:
       required: true
@@ -38,6 +40,7 @@ body:
         If this request was implemented, what might the Terraform configuration look like? Similar to above, a best guess is helpful, even if you're unsure of exactly what the end result will look like.
 
         **Note:** This field will render in HCL, so there is no need to add a [code fence](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
+        
       render: terraform
     validations:
       required: false
