@@ -97,7 +97,7 @@ body:
 
         Here, we ask that you provide the Terraform configuration and, when possible, the debug logs. For configurations or logs of more than just a few lines, it's preferred to either share a Gist link or zip the files and upload them. 
         
-        Terraform configurations or debug logs under 25MB may be [attached directly in the field]. Files larger than this should be uploaded to a file hosting service and a link shared.
+        Terraform configurations or debug logs under 25MB may be [attached directly in the field](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/attaching-files). Files larger than this should be uploaded to a file hosting service and a link shared.
 
         For your security you can also encrypt the files using our [GPG public key](https://keybase.io/hashicorp).
 
