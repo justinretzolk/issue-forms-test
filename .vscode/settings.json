@@ -1,0 +1,8 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-issue-forms.json": [
+            "file:///Users/justinretzolk/github.com/justinretzolk/issue-forms-test/.github/ISSUE_TEMPLATE/bug_report.yml",
+            "file:///Users/justinretzolk/github.com/justinretzolk/issue-forms-test/.github/ISSUE_TEMPLATE/config.yml"
+        ]
+    }
+}
