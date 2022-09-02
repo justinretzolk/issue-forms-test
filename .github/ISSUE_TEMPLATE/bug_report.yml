@@ -6,9 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        # Thank you for opening an issue
+        # Thank you for opening a bug report
 
-        Before submitting an issue, we ask that you first search existing issues to see if someone else may have experienced the same thing. This helps to keep all relevant information in one place, including any potential workarounds.
+        Before submitting a bug report, we ask that you first search existing issues to see if someone else may have experienced the same issue. This helps to keep all relevant information in one place, including any potential workarounds.
 
         We also ask that you consider whether your issue may be related to Terraform Core. If you are running into one of the following scenarios, we recommend [opening an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead:
 
@@ -86,7 +86,7 @@ body:
     attributes:
       label: Relevant Error/Panic Output Snippet
       description: If applicable, provide a relevant snippet from the error or panic output.
-      render: Shell
+      render: shell
     validations:
       required: false
   
