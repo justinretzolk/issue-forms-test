@@ -19,16 +19,6 @@ body:
       description: Please leave a helpful description of the feature request here.
     validations:
       required: true
-
-  - type: checkboxes
-    id: will_contribute
-    attributes:
-      label: Would you like to implement this yourself?
-      description: |
-        If you plan to implement this feature yourself, check this box to let the maintainers and community know so that two contributors don't separately begin work on implementation. You can update this later if you change your mind.
-      options:
-        - label: I would like to implement this myself.
-          required: false
   
   - type: textarea
     id: affected
@@ -59,3 +49,13 @@ body:
         [Information about referencing Github Issues](https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests)
     validations:
       required: false
+
+  - type: checkboxes
+    id: will_contribute
+    attributes:
+      label: Would you like to implement this yourself?
+      description: |
+        If you plan to implement this feature yourself, check this box to let the maintainers and community know so that two contributors don't separately begin work on implementation. You can update this later if you change your mind.
+      options:
+        - label: I would like to implement this myself.
+          required: false
