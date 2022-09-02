@@ -35,6 +35,8 @@ body:
       label: Potential Terraform Configuration
       description: |
         If this request was implemented, what might the Terraform configuration look like? A best guess is helpful, even if you're unsure of exactly what the end result will look like. This helps maintainers and the community better understand your idea.
+
+        **Note:** This field will render in HCL, so there is no need to add a [code fence](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
       render: terraform
     validations:
       required: false
