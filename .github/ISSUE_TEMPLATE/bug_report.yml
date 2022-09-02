@@ -85,7 +85,8 @@ body:
     id: log_snippet
     attributes:
       label: Relevant Error/Panic Output Snippet
-      description: If applicable, provide a relevant snippet from the error or panic output.
+      description: | 
+        If applicable, provide a relevant snippet from the error or panic output. This will be rendered as `shell`, so there is no need to add a [code fence](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
       render: shell
     validations:
       required: false
