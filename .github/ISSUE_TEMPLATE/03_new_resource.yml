@@ -12,6 +12,12 @@ body:
 
         When possible, it's helpful to check the [AWS Go SDK](https://pkg.go.dev/github.com/aws/aws-sdk-go/service) or [AWS Go SDK v2](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2#section-directories) to determine whether functionality exists to enable the requested feature. It is **not** required that you do this. Any references found when searching can be added to the "References" field below to give maintainers or the community a head start.
 
+        Please update the title to match what you're requesting, e.g.:
+
+        - `[New Resource]: ` for new resource requests
+        - `[New Data Source]: ` for new data source requests
+        - `[New Service]: ` for new AWS services
+
   - type: textarea
     id: description
     attributes:
