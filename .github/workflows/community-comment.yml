@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Add community note to new Issues
-      if: github.event_name == 'issue'
+      if: github.event_name == 'issues'
       uses: peter-evans/create-or-update-comment@v1
       with:
         issue-number: ${{ github.event.issue.number }}
