@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Add community note to new Issues
-      if: github.event_name == "issue"
+      if: github.event_name == 'issue'
       uses: peter-evans/create-or-update-comment@v1
       with:
         issue-number: github.event.issue.number
@@ -31,7 +31,7 @@ jobs:
   
     - name: Add community note to new Pull Requests
       uses: peter-evans/create-or-update-comment@v1
-      if: github.event_name == "pull_request_target"
+      if: github.event_name == 'pull_request_target'
       with:
         issue-number: github.event.pull_request.number
         body: |
