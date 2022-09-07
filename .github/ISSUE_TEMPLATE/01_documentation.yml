@@ -15,7 +15,7 @@ body:
   - type: input
     id: registry_link
     attributes:
-      label: Terraform Registry Link
+      label: Documentation Link
       description: Please provide a link to the affected page on the Terraform Registry or contribution guide.
     validations:
       required: true
