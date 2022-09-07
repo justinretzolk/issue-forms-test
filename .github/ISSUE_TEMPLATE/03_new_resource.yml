@@ -14,9 +14,9 @@ body:
 
         Please update the title to match what you're requesting, e.g.:
 
-        - `[New Resource]: ` - for new resource requests
-        - `[New Data Source]: ` - for new data source requests
-        - `[New Service]: ` - for new AWS services
+        - `[New Resource]:` - for new resource requests
+        - `[New Data Source]:` - for new data source requests
+        - `[New Service]:` - for new AWS services
 
   - type: textarea
     id: description
