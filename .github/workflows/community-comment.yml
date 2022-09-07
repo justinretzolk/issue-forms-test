@@ -14,7 +14,7 @@ jobs:
       if: github.event_name == 'issue'
       uses: peter-evans/create-or-update-comment@v1
       with:
-        issue-number: github.event.issue.number
+        issue-number: ${{ github.event.issue.number }}
         body: |
           # Community Note
 
@@ -33,7 +33,7 @@ jobs:
       uses: peter-evans/create-or-update-comment@v1
       if: github.event_name == 'pull_request_target'
       with:
-        issue-number: github.event.pull_request.number
+        issue-number: ${{ github.event.pull_request.number }}
         body: |
           # Community Note
 
