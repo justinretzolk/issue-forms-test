@@ -100,7 +100,7 @@ body:
 
         For your security you can also encrypt the files using our [GPG public key](https://keybase.io/hashicorp).
 
-        [Information about code formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code).
+        **Note:** These form fields do not automatically render, so you will need to use [code fence(s)](https://help.github.com/articles/basic-writing-and-formatting-syntax/#quoting-code) to achieve proper formatting.
 
   - type: textarea
     id: tf_config
