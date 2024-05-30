@@ -20,6 +20,7 @@ body:
         With that in mind, we ask for a few considerations to help keep things running smoothly.
 
         ### Considerations
+        ---
 
   - id: acknowledge_search
     type: checkboxes
