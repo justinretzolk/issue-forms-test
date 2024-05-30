@@ -17,6 +17,16 @@ body:
 
         Community reports to this repository are one of our primary means of feedback, so we greatly appreciate it. With that in mind, we ask for a few considerations to help keep things running smoothly.
 
+  - type: markdown
+    attributes:
+      value: |
+        ### Search for similar reports
+
+        Before submitting a bug report, please [search](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if your issue has already been reported. This helps to keep all relevant information in one place, including any potential workarounds.
+
+        > [!TIP]
+        > Searching for keywords such as error messages, resources names, or argument names is often helpful in finding related issues. Including closed issues in your search can help locate previous solutions from the community, or point towards regressions.
+
   - id: acknowledge_search
     type: checkboxes
     attributes:
