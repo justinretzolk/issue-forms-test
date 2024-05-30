@@ -13,9 +13,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Thank you for raising a bug report!
-
-        Community reports to this repository are one of our primary means of feedback, so we greatly appreciate it.
+        Thank you for taking the time to report a bug! Community reports to this repository are one of our primary means of feedback, so we greatly appreciate it.
 
         With that in mind, we ask for a few considerations to help keep things running smoothly.
 
