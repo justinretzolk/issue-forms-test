@@ -22,11 +22,7 @@ body:
         <details open><summary><h3>Search for previous reports</h3></summary></details>
 
           - test
-
-          Before submitting a bug report, please [search](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if your issue has already been reported. This helps to keep all relevant information in one place, including any potential workarounds.
-
-          > [!TIP]
-          > Searching for keywords such as error messages, resources names, or argument names is often helpful in finding related issues. Including closed issues in your search can help locate previous solutions from the community, or point towards regressions.
+          - test2
         </details>
 
         ### Consider the context
