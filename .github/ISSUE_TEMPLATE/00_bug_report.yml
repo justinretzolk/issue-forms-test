@@ -78,7 +78,12 @@ body:
     type: checkboxes
     attributes:
       label: This is what the checkboxes label looks like
-      description: This is what the description looks like
+      description: |
+        This is what the description looks like.
+
+        I've added a couple of line breaks here to see if that works.
+
+        **This should be bold if this accepts markdown**
       options:
         - label: This is the first option label
           required: false
