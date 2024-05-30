@@ -72,8 +72,8 @@ body:
       description: This is what the description looks like
       multiple: false
       options:
-        - No
-        - Yes
+        - "No"
+        - "Yes"
       default: 0
     validations:
       required: false
