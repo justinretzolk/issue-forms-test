@@ -28,11 +28,10 @@ body:
           > Searching for keywords such as error messages, resources names, or argument names is often helpful in finding related issues. Including closed issues in your search can help locate previous solutions from the community, or point towards regressions.
         </details>
 
-        ### Consider the context
+        <details open>
+        <summary><h3>Consider the context</h3></summary>
 
         Consider whether your issue may be related to Terraform Core, rather than the AWS Cloud Control Provider. In those cases, please [open an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead. A few common examples of these types of issues may be found below.
-
-        <details><summary><h3>Terraform Core Issue Examples</h3></summary>
 
           - Issues with the [HashiCorp Configuration Language](https://www.terraform.io/docs/configuration/index.html)
           - Resource creation/deletion ordering issues
