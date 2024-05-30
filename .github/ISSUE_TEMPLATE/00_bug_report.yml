@@ -19,7 +19,7 @@ body:
 
         ---
 
-        <details open><summary><h3>Search for previous reports</h3></summary></details>
+        <details><summary><h3>Search for previous reports</h3></summary></details>
 
           - test
           - test2
