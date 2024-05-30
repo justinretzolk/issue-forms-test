@@ -8,6 +8,7 @@ description: |
 labels:
   - bug
 
+# Just shows what all is possible
 body:
   - type: markdown
     attributes:
@@ -39,3 +40,51 @@ body:
               <li>five</li>
             </ul>
           </details>
+
+  - id: textarea
+    type: textarea
+    attributes:
+      label: This is the textarea label
+      description: This is what the description looks like
+      placeholder: This is what the placeholder looks like
+      value: |
+        locals {
+          this = "This should be formatted"
+        }
+      render: hcl
+    validations:
+      required: false
+
+  - id: input
+    type: input
+    attributes:
+      label: This is the input label
+      description: This is what the description looks like
+      placeholder: This is what the placeholder looks like
+      value: This is what the value looks like
+    validations:
+      required: true
+
+  - id: dropdown
+    type: dropdown
+    attributes:
+      label: This is what the dropdown label looks like
+      description: This is what the description looks like
+      multiple: false
+      options:
+        - No
+        - Yes
+      default: 0
+    validations:
+      required: false
+
+  - id: checkboxes
+    type: checkboxes
+    attributes:
+      label: This is what the checkboxes label looks like
+      description: This is what the description looks like
+      options:
+        - label: This is the first option label
+          required: false
+        - label: This is a required option label
+          required: true
