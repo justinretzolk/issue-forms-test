@@ -19,14 +19,14 @@ body:
 
         ---
 
-        #### Search for previous reports
+        ### Search for previous reports
 
         Before submitting a bug report, please [search](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if your issue has already been reported. This helps to keep all relevant information in one place, including any potential workarounds.
 
         > [!TIP]
         > Searching for keywords such as error messages, resources names, or argument names is often helpful in finding related issues. Including closed issues in your search can help locate previous solutions from the community, or point towards regressions.
 
-        #### Consider the context</h3></summary>
+        ### Consider the context</h3></summary>
 
         Consider whether your issue may be related to Terraform Core, rather than the AWS Cloud Control Provider. In those cases, please [open an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead. A few common examples of these types of issues may be found below.
 
@@ -36,6 +36,8 @@ body:
         - [Provisioner](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax) issues
         - [Registry](https://registry.terraform.io/) issues
         - Issues that span across multiple providers
+
+        ---
 
   - id: textarea
     type: textarea
