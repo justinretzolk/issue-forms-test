@@ -19,7 +19,7 @@ body:
 
         ---
 
-        <details>
+        <details open>
         <summary><h3>Search for previous reports</h3></summary>
 
           Before submitting a bug report, please [search](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if your issue has already been reported. This helps to keep all relevant information in one place, including any potential workarounds.
