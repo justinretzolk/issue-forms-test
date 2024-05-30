@@ -17,15 +17,27 @@ body:
 
         Community reports to this repository are one of our primary means of feedback, so we greatly appreciate it. With that in mind, we ask for a few considerations to help keep things running smoothly.
 
-        ### Search for previous reports
-
+  - id: acknowledge_search
+    type: checkboxes
+    attributes:
+      label: Search for similar reports
+      description: |
         Before submitting a bug report, please [search](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if your issue has already been reported. This helps to keep all relevant information in one place, including any potential workarounds.
 
         > [!TIP]
         > Searching for keywords such as error messages, resources names, or argument names is often helpful in finding related issues. Including closed issues in your search can help locate previous solutions from the community, or point towards regressions.
 
-        ### Consider the context</h3></summary>
+      options:
+        - label: I have searched the repository for issues related to mine.
+          required: true
+        - label: I am reporting an issue that was previously reported (regressions, previously stale, etc.).
+          required: false
 
+  - id: acknowledge_core
+    type: checkboxes
+    attributes:
+      label: Consider whether the issue is related to Terraform Core
+      description: |
         Consider whether your issue may be related to Terraform Core, rather than the AWS Cloud Control Provider. In those cases, please [open an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead. A few common examples of these types of issues may be found below.
 
         - Issues with the [HashiCorp Configuration Language](https://www.terraform.io/docs/configuration/index.html)
@@ -35,7 +47,9 @@ body:
         - [Registry](https://registry.terraform.io/) issues
         - Issues that span across multiple providers
 
-        ---
+      options:
+        - label: My issue is not related to the scenarios described above.
+          required: true
 
   - id: textarea
     type: textarea
