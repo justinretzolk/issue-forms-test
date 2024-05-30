@@ -17,6 +17,8 @@ body:
 
         Community reports to this repository are one of our primary means of feedback, so we greatly appreciate it. With that in mind, we ask for a few considerations to help keep things running smoothly.
 
+        ---
+
         ### Search for revious reports
 
         Before submitting a bug report, please [search](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if your issue has already been reported. This helps to keep all relevant information in one place, including any potential workarounds.
@@ -34,8 +36,8 @@ body:
           - Resource creation/deletion ordering issues
           - Issues related to Terraform's [state file](https://developer.hashicorp.com/terraform/language/state) or [state dackend](https://developer.hashicorp.com/terraform/language/settings/backends/configuration) issues (including the S3 backend)
           - [Provisioner](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax) issues
-          * [Registry](https://registry.terraform.io/) issues
-          * Issues that span across multiple providers
+          - [Registry](https://registry.terraform.io/) issues
+          - Issues that span across multiple providers
         </details>
 
   - id: textarea
