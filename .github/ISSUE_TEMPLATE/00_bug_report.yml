@@ -27,7 +27,6 @@ body:
           > [!TIP]
           > Searching for keywords such as error messages, resources names, or argument names is often helpful in finding related issues. Including closed issues in your search can help locate previous solutions from the community, or point towards regressions.
         </details>
-
         <details open>
         <summary><h3>Consider the context</h3></summary>
 
