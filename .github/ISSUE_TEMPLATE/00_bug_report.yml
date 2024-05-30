@@ -36,6 +36,7 @@ body:
   - type: markdown
     attributes:
       value: |
+
         ### Terraform Core Issues
 
         Consider whether your issue may be related to Terraform Core, rather than the AWS Cloud Control Provider. In those cases, please [open an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead. A few common examples of these types of issues are:
