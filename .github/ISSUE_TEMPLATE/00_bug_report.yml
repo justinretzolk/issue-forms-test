@@ -16,7 +16,9 @@ body:
 
         Thank you very much for taking the time to submit a bug report! Community reports to this repository are one of our primary means of feedback, so we greatly appreciate you taking the time to do so. With that in mind, we ask for a few considerations to help keep things running smoothly.
 
-        ---
+        ## Before submitting a bug report
+
+        #### Terraform Core related issues
 
         Consider whether your issue may be related to Terraform Core, rather than the AWS Cloud Control Provider. In those cases, please [open an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead. Some common examples of this include:
 
@@ -26,16 +28,19 @@ body:
           - [Provisioner](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax) or [Terraform Registry](https://registry.terraform.io/) issues
           - Issues that span across multiple providers
 
+        #### Search for similar reports
+
+        Please [search the existing issues](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if someone else has already reported the bug you experienced. This helps to, where appropriate, keep all relevant information in one place (including any potential workarounds).
+
+        > [!TIP]
+        > Searching for keywords such as error messages, resources names, or argument names is often helpful in finding related issues.
+        >
+        > Including closed issues in your search can help locate past solutions from the community or point towards regressions.
+
   - type: checkboxes
     id: acknowledge_search
     attributes:
-      label: Previous Bug Reports
-      description: |
-        Before submitting a bug report, please [search](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if your issue has already been reported. This helps to, where appropriate, keep all relevant information in one place (including any potential workarounds).
-
-        > [!TIP]
-        > Searching for keywords such as error messages, resources names, or argument names is often helpful in finding related issues. Including closed issues in your search can help locate previous solutions from the community, or point towards regressions.
-
+      label: Prior Bug Reports
       options:
         - label: I have searched the repository for similar issues
           required: true
@@ -71,7 +76,6 @@ body:
         Please list any resources or data sources that are affected by the bug. This list does not need to include ancillary resources necessary to reproduce the bug.
       placeholder: |
         Example:
-
         - aws_iam_user
         - data.aws_iam_user
     validations:
