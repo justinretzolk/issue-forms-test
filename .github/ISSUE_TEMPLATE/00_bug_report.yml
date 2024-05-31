@@ -12,15 +12,18 @@ body:
   - type: markdown
     attributes:
       value: |
+        ## A note from the maintainers
+
         Thank you very much for taking the time to submit a bug report! Community reports to this repository are one of our primary means of feedback, so we greatly appreciate you taking the time to do so. With that in mind, we ask for a few considerations to help keep things running smoothly.
+
+        ---
 
         Consider whether your issue may be related to Terraform Core, rather than the AWS Cloud Control Provider. In those cases, please [open an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead. Some common examples of this include:
 
           - Issues with the [HashiCorp Configuration Language](https://www.terraform.io/docs/configuration/index.html)
           - Resource creation/deletion ordering issues
           - Issues related to Terraform's [state file](https://developer.hashicorp.com/terraform/language/state) or [state dackend](https://developer.hashicorp.com/terraform/language/settings/backends/configuration) issues (including the S3 backend)
-          - [Provisioner](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax) issues
-          - [Registry](https://registry.terraform.io/) issues
+          - [Provisioner](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax) or [Terraform Registry](https://registry.terraform.io/) issues
           - Issues that span across multiple providers
 
   - type: checkboxes
