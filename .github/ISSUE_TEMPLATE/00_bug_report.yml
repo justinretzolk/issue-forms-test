@@ -12,14 +12,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Thank you for taking the time to report a bug!
+        Thank you very much for taking the time to submit a bug report! Community reports to this repository are one of our primary means of feedback, so we greatly appreciate you taking the time to do so. With that in mind, we ask for a few considerations to help keep things running smoothly.
 
-        Community reports to this repository are one of our primary means of feedback, so we greatly appreciate it. With that in mind, we ask for a few considerations to help keep things running smoothly.
+        <details show>
+        <summary><b>Common Terraform Core Related Issues</b></summary>
 
-        Consider whether your issue may be related to Terraform Core, rather than the AWS Cloud Control Provider. In those cases, please [open an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead.
-
-        <details>
-        <summary>Common Terraform Core Related Issues</summary>
+          Consider whether your issue may be related to Terraform Core, rather than the AWS Cloud Control Provider. In those cases, please [open an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead.
 
           - Issues with the [HashiCorp Configuration Language](https://www.terraform.io/docs/configuration/index.html)
           - Resource creation/deletion ordering issues
@@ -29,8 +27,8 @@ body:
           - Issues that span across multiple providers
         </details>
 
-  - id: acknowledge_search
-    type: checkboxes
+  - type: checkboxes
+    id: acknowledge_search
     attributes:
       label: Previous Bug Reports
       description: |
@@ -40,29 +38,48 @@ body:
         > Searching for keywords such as error messages, resources names, or argument names is often helpful in finding related issues. Including closed issues in your search can help locate previous solutions from the community, or point towards regressions.
 
       options:
-        - label: I have searched the repository for issues related to mine.
+        - label: I have searched the repository for similar issues
           required: true
 
-  - id: acknowledge_core
-    type: checkboxes
+  - type: markdown
     attributes:
-      label: Consider whether the issue is related to Terraform Core
+      value: ---
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
       description: |
-        Consider whether your issue may be related to Terraform Core, rather than the AWS Cloud Control Provider. In those cases, please [open an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead. A few common examples of these types of issues may be found below.
+        Please provide a brief description of the bug that you encountered. There are later inputs for logging output,
 
-        - Issues with the [HashiCorp Configuration Language](https://www.terraform.io/docs/configuration/index.html)
-        - Resource creation/deletion ordering issues
-        - Issues related to Terraform's [state file](https://developer.hashicorp.com/terraform/language/state) or [state dackend](https://developer.hashicorp.com/terraform/language/settings/backends/configuration) issues (including the S3 backend)
-        - [Provisioner](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax) issues
-        - [Registry](https://registry.terraform.io/) issues
-        - Issues that span across multiple providers
+        Note: We provide a basic template that we find is often a good starting point for describing issues. Since bugs are all a bit different, we understand if you choose not to use it.
+      value: |
+        #### Expected Behavior
 
-      options:
-        - label: My issue is not related to the scenarios described above.
-          required: true
+        <!--- Describe what you expected to happen here --->
 
-  - id: textarea
-    type: textarea
+        #### Actual Behavior
+
+        <!--- Describe what actually happens here --->
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Affected Resources / Data Sources
+      description: |
+        Please list any resources or data sources that are affected by the bug. This list does not need to include ancillary resources necessary to reproduce the bug.
+      placeholder: |
+        Example:
+
+        - aws_iam_user
+        - data.aws_iam_user
+    validations:
+      required: false
+
+  - type: textarea
+    id: textarea
     attributes:
       label: This is the textarea label
       description: This is what the description looks like
