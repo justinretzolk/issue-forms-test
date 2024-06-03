@@ -32,10 +32,13 @@ body:
 
         Please [search the existing issues](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if someone else has already reported the bug you experienced. This helps keep all relevant information in one place (including any potential workarounds).
 
-        > [!TIP]
-        > Searching for keywords such as error messages or resource names is often helpful in finding related issues.
-        >
-        > Including closed issues in your search helps locate community workarounds and fixes from the past, or point towards regressions.
+        <details>
+          <summary>Search Tips</summary>
+
+          Searching for keywords such as error messages or resource names is often helpful in finding related issues.
+
+          Including closed issues in your search helps locate community workarounds and fixes from the past, or point towards regressions.
+        </details>
 
   - type: checkboxes
     id: acknowledge_search
@@ -87,10 +90,7 @@ body:
       value: |
         #### Software Versions
 
-        > [!TIP]
-        > If you're unsure of the version of Terraform or the AWS Provider that is currently being used, the following command can be used in an [initialized directory](https://developer.hashicorp.com/terraform/tutorials/cli/init) to output version information:
-        >
-        > `terraform --version`
+        Running `terraform --version` in an [initialized directory](https://developer.hashicorp.com/terraform/tutorials/cli/init) will output version information for Terraform and the AWS Provider.
 
   - type: input
     id: core_version
@@ -109,10 +109,7 @@ body:
       description: |
         The version(s) of the AWS Provider that exhibit the bug.
 
-        Please note that for versions older than the most recent[^1] major version[^2], we may ask that you upgrade to a later version to see if your issue has already been fixed. If you're unable to upgrade to the latest major version, we ask that you provide additional context below.
-
-        [^1]: The latest version is displayed in the [Provider Registry](https://registry.terraform.io/providers/hashicorp/aws/latest)
-        [^2]: [Semantic Versioning 2.0.0](https://semver.org/)
+        Please note that for versions older than the [most recent](https://registry.terraform.io/providers/hashicorp/aws/latest) major version, we may ask that you upgrade to a later version to see if your issue has already been fixed. If you're unable to upgrade to the latest major version, we ask that you provide additional context below.
       placeholder: x.y.z
     validations:
       required: true
