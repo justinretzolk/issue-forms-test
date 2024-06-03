@@ -32,7 +32,7 @@ body:
           - Issues that span across multiple providers
         </details>
 
-        #### Search for similar reports
+        ### Search for similar reports
 
         Please [search the existing issues](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if someone else has already reported the bug you experienced. This helps keep all relevant information in one place (including any potential workarounds).
 
@@ -94,8 +94,6 @@ body:
     attributes:
       label: Terraform Core Version
       description: |
-        The Terraform Core version(s) that you were using when you experienced the bug.
-
         Running `terraform --version` in an [initialized directory](https://developer.hashicorp.com/terraform/tutorials/cli/init) will output version information for Terraform and the AWS Provider.
       placeholder: x.y.z
     validations:
@@ -106,8 +104,6 @@ body:
     attributes:
       label: AWS Provider Version
       description: |
-        The version(s) of the AWS Provider that exhibit the bug.
-
         Please note that for versions older than the [most recent](https://registry.terraform.io/providers/hashicorp/aws/latest) major version, we may ask that you upgrade to a later version to see if your issue has already been fixed. If you're unable to upgrade to the latest major version, we ask that you provide additional context below.
       placeholder: x.y.z
     validations:
@@ -126,55 +122,68 @@ body:
     validations:
       required: false
 
-  - type: textarea
-    id: textarea
+  - type: markdown
     attributes:
-      label: This is the textarea label
-      description: This is what the description looks like
-      placeholder: This is what the placeholder looks like
       value: |
-        locals {
-          this = "This should be formatted"
-        }
-      render: hcl
-    validations:
-      required: false
+        > [!NOTE]
+        > For configurations or logs of more than just a few lines, it's preferred to either share a Gist link or zip the files and upload them.
+        >
+        > Terraform configurations or debug logs under 25MB may be [attached directly in the field](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/attaching-files). Files larger than this should be uploaded to a file hosting service and a link shared.
+        >
+        > For your security you can also encrypt the files using our [GPG public key](https://keybase.io/hashicorp).
 
-  - id: input
-    type: input
+  - type: textarea
+    id: configuration
     attributes:
-      label: This is the input label
-      description: This is what the description looks like
-      placeholder: This is what the placeholder looks like
-      value: This is what the value looks like
+      label: Terraform Configuration
+      description: |
+        Please paste, upload, or link to a file or Gist containing all Terraform configurations required to reproduce the bug.
+
+        **Bug reports without a functional reproduction may be closed without investigation.**
+      placeholder: |
+        ```hcl
+        # Code fences apply format that makes inline configurations easier to read.
+        ```
     validations:
       required: true
 
-  - id: dropdown
-    type: dropdown
+  - type: textarea
+    id: reproduction
     attributes:
-      label: This is what the dropdown label looks like
-      description: This is what the description looks like
-      multiple: false
-      options:
-        - "No"
-        - "Yes"
-      default: 0
+      label: Steps to Reproduce
+      placeholder: |
+        Example:
+        - Make a change
+        - Run `terraform apply`
     validations:
       required: false
 
-  - id: checkboxes
-    type: checkboxes
+  - type: textarea
+    id: logging
     attributes:
-      label: This is what the checkboxes label looks like
+      label: Log Output
       description: |
-        This is what the description looks like.
+        If possible, please paste, upload, or link to a file or Gist containing debug logs. If you're not able to supply logging, providing context here instead helps limit back and forth.
 
-        I've added a couple of line breaks here to see if that works.
+        For information on obtaining debug output, see the [Terraform documentation on debugging](https://www.terraform.io/docs/internals/debugging.html).
+    validations:
+      required: true
 
-        **This should be bold if this accepts markdown**
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Information
+      description: |
+        A freeform field for context that might help the community or maintainers to investigate the bug. This might be links to documentation or similar bug reports, specifics about your environment that might be of note, etc.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contributor
+    attributes:
+      label: Plan to Contribute
+      description: |
+        If you plan to implement a fix for this, check this box to let the maintainers and community know. You can update this later if you change your mind. If this would be your first contribution, refer to the [contribution guide](https://hashicorp.github.io/terraform-provider-aws/) for tips on getting started.
       options:
-        - label: This is the first option label
+        - label: Check this box if you plan to contribute a fix
           required: false
-        - label: This is a required option label
-          required: true
