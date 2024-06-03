@@ -30,31 +30,32 @@ body:
 
         #### Search for similar reports
 
-        Please [search the existing issues](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if someone else has already reported the bug you experienced. This helps to, where appropriate, keep all relevant information in one place (including any potential workarounds).
+        Please [search the existing issues](https://github.com/hashicorp/terraform-provider-awscc/issues?q=is%3Aissue) to see if someone else has already reported the bug you experienced. This helps keep all relevant information in one place (including any potential workarounds).
 
         > [!TIP]
-        > Searching for keywords such as error messages, resources names, or argument names is often helpful in finding related issues.
+        > Searching for keywords such as error messages or resource names is often helpful in finding related issues.
         >
-        > Including closed issues in your search can help locate past solutions from the community or point towards regressions.
+        > Including closed issues in your search helps locate community workarounds and fixes from the past, or point towards regressions.
 
   - type: checkboxes
     id: acknowledge_search
     attributes:
       label: Prior Bug Reports
       options:
-        - label: I have searched the repository for similar issues
+        - label: I searched the repository for similar issues
           required: true
 
   - type: markdown
     attributes:
-      value: ---
+      value: |
+        ## Bug Form
 
   - type: textarea
     id: description
     attributes:
       label: Description
       description: |
-        Please provide a brief description of the bug that you encountered. There are later inputs for logging output,
+        Please provide a brief description of the bug that you encountered. We provide additional sections for configuration details, logging output, and any other notable details.
 
         Note: We provide a basic template that we find is often a good starting point for describing issues. Since bugs are all a bit different, we understand if you choose not to use it.
       value: |
@@ -73,11 +74,57 @@ body:
     attributes:
       label: Affected Resources / Data Sources
       description: |
-        Please list any resources or data sources that are affected by the bug. This list does not need to include ancillary resources necessary to reproduce the bug.
+        Please list any resources or data sources that are affected by the bug. This list does not need to include any ancillary resources needed for reproductions.
       placeholder: |
         Example:
         - aws_iam_user
         - data.aws_iam_user
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        #### Software Versions
+
+        > [!TIP]
+        > If you're unsure of the version of Terraform or the AWS Provider that is currently being used, the following command can be used in an [initialized directory](https://developer.hashicorp.com/terraform/tutorials/cli/init) to output version information:
+        >
+        > `terraform --version`
+
+  - type: input
+    id: core_version
+    attributes:
+      label: Terraform Core Version
+      description: |
+        The Terraform Core version(s) that you were using when you experienced the bug.
+      placeholder: x.y.z
+    validations:
+      required: false
+
+  - type: input
+    id: provider_version
+    attributes:
+      label: AWS Provider Version
+      description: |
+        The version(s) of the AWS Provider that exhibit the bug.
+
+        Please note that for versions older than the most recent[^1] major version[^2], we may ask that you upgrade to a later version to see if your issue has already been fixed. If you're unable to upgrade to the latest major version, we ask that you provide additional context below.
+
+        [^1]: The latest version is displayed in the [Provider Registry](https://registry.terraform.io/providers/hashicorp/aws/latest)
+        [^2]: [Semantic Versioning 2.0.0](https://semver.org/)
+      placeholder: x.y.z
+    validations:
+      required: true
+
+  - type: textarea
+    id: unable_to_upgrade
+    attributes:
+      label: Context for older versions
+      description: |
+        Additional context for the usage of versions older than the latest major version helps reduce a bit of the initial back and forth, since we generally [don't backport fixes](https://hashicorp.github.io/terraform-provider-aws/faq/#once-a-major-release-is-published-will-new-features-and-fixes-be-backported-to-previous-versions). This could be as simple as 'organizational restrictions', and is optional.
+      value: |
+        n/a
     validations:
       required: false
 
