@@ -55,6 +55,8 @@ body:
 
         Note: We provide a basic template that we find is often a good starting point for describing issues. Since bugs are all a bit different, we understand if you choose not to use it.
       value: |
+        <!--- Briefly describe the issue here --->
+
         #### Expected Behavior
 
         <!--- Describe what you expected to happen here --->
