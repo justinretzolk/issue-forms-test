@@ -142,7 +142,7 @@ body:
         **Bug reports without a functional reproduction may be closed without investigation.**
       placeholder: |
         ```hcl
-        # Code fences apply formatting that makes inline configurations easier to read.
+        # Code fences with the 'hcl' apply formatting that makes inline configurations easier to read.
         ```
     validations:
       required: true
@@ -166,6 +166,10 @@ body:
         If possible, please paste, upload, or link to a file or Gist containing debug logs. If you're not able to supply logging, providing context here instead helps limit back and forth.
 
         For information on obtaining debug output, see the [Terraform documentation on debugging](https://www.terraform.io/docs/internals/debugging.html).
+      placeholder: |
+        ```console
+        # Code fences with the 'console' tag apply formatting that makes logging easier to read.
+        ```
     validations:
       required: true
 
