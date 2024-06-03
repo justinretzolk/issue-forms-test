@@ -92,7 +92,7 @@ body:
   - type: input
     id: core_version
     attributes:
-      label: Terraform Core Version
+      label: Terraform Core Version(s)
       description: |
         Running `terraform --version` in an [initialized directory](https://developer.hashicorp.com/terraform/tutorials/cli/init) will output version information for Terraform and the AWS Provider.
       placeholder: x.y.z
@@ -102,7 +102,7 @@ body:
   - type: input
     id: provider_version
     attributes:
-      label: AWS Provider Version
+      label: AWS Provider Version(s)
       description: |
         Please note that for versions older than the [most recent](https://registry.terraform.io/providers/hashicorp/aws/latest) major version, we may ask that you upgrade to a later version to see if your issue has already been fixed. If you're unable to upgrade to the latest major version, we ask that you provide additional context below.
       placeholder: x.y.z
@@ -114,7 +114,7 @@ body:
     attributes:
       label: Context for older versions
       description: |
-        Additional context for the usage of versions older than the latest major version helps reduce a bit of the initial back and forth, since we generally [don't backport fixes](https://hashicorp.github.io/terraform-provider-aws/faq/#once-a-major-release-is-published-will-new-features-and-fixes-be-backported-to-previous-versions).
+        If you're unable to use the latest major version, providing context helps reduce a bit of the initial back and forth, since we generally [don't backport fixes](https://hashicorp.github.io/terraform-provider-aws/faq/#once-a-major-release-is-published-will-new-features-and-fixes-be-backported-to-previous-versions).
 
         This could be as simple as 'organizational restrictions', and is optional.
       value: |
@@ -142,7 +142,7 @@ body:
         **Bug reports without a functional reproduction may be closed without investigation.**
       placeholder: |
         ```hcl
-        # Code fences apply format that makes inline configurations easier to read.
+        # Code fences apply formatting that makes inline configurations easier to read.
         ```
     validations:
       required: true
@@ -174,7 +174,7 @@ body:
     attributes:
       label: Additional Information
       description: |
-        A freeform field for context that might help the community or maintainers to investigate the bug. This might be links to documentation or similar bug reports, specifics about your environment that might be of note, etc.
+        A freeform field for context that might help the community or maintainers to investigate the bug. This includes links to documentation or similar bug reports, specifics about your environment that might be of note, etc.
     validations:
       required: false
 
