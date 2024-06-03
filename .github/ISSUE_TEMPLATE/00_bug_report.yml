@@ -18,7 +18,7 @@ body:
 
         ## Before submitting a bug report
 
-        #### Terraform Core related issues
+        ### Terraform Core related issues
 
         Consider whether your issue may be related to Terraform Core, rather than the AWS Cloud Control Provider. In those cases, please [open an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead.
 
@@ -89,19 +89,14 @@ body:
     validations:
       required: false
 
-  - type: markdown
-    attributes:
-      value: |
-        #### Software Versions
-
-        Running `terraform --version` in an [initialized directory](https://developer.hashicorp.com/terraform/tutorials/cli/init) will output version information for Terraform and the AWS Provider.
-
   - type: input
     id: core_version
     attributes:
       label: Terraform Core Version
       description: |
         The Terraform Core version(s) that you were using when you experienced the bug.
+
+        Running `terraform --version` in an [initialized directory](https://developer.hashicorp.com/terraform/tutorials/cli/init) will output version information for Terraform and the AWS Provider.
       placeholder: x.y.z
     validations:
       required: false
@@ -123,7 +118,9 @@ body:
     attributes:
       label: Context for older versions
       description: |
-        Additional context for the usage of versions older than the latest major version helps reduce a bit of the initial back and forth, since we generally [don't backport fixes](https://hashicorp.github.io/terraform-provider-aws/faq/#once-a-major-release-is-published-will-new-features-and-fixes-be-backported-to-previous-versions). This could be as simple as 'organizational restrictions', and is optional.
+        Additional context for the usage of versions older than the latest major version helps reduce a bit of the initial back and forth, since we generally [don't backport fixes](https://hashicorp.github.io/terraform-provider-aws/faq/#once-a-major-release-is-published-will-new-features-and-fixes-be-backported-to-previous-versions).
+
+        This could be as simple as 'organizational restrictions', and is optional.
       value: |
         n/a
     validations:
