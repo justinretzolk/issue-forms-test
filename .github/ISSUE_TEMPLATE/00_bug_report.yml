@@ -44,17 +44,6 @@ body:
           Including closed issues in your search helps locate community workarounds and fixes from the past, or point towards regressions.
         </details>
 
-  - type: checkboxes
-    id: acknowledge_search
-    attributes:
-      label: Prior Bug Reports
-      options:
-        - label: I searched the repository for similar issues
-          required: true
-
-  - type: markdown
-    attributes:
-      value: |
         ## Bug Form
 
   - type: textarea
