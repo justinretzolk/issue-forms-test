@@ -182,12 +182,16 @@ body:
     validations:
       required: false
 
-  - type: checkboxes
+  - type: dropdown
     id: contributor
     attributes:
       label: Plan to Contribute
+      multiple: false
+      default: 0
       description: |
         If you plan to implement a fix for this, check this box to let the maintainers and community know. You can update this later if you change your mind. If this would be your first contribution, refer to the [contribution guide](https://hashicorp.github.io/terraform-provider-aws/) for tips on getting started.
       options:
-        - label: Check this box if you plan to contribute a fix
-          required: false
+        - "No"
+        - "Yes"
+    validations:
+      required: false
