@@ -1,4 +1,4 @@
-name: Bug Reports
+name: Bug Report
 
 description: |
   Report errors, crashes, or otherwise incorect behavior.
@@ -70,7 +70,7 @@ body:
   - type: textarea
     id: resources
     attributes:
-      label: Affected Resources / Data Sources
+      label: Affected Resource(s) / Data Source(s)
       description: |
         Please list any resources or data sources that are affected by the bug. This list does not need to include any ancillary resources needed for reproductions.
       placeholder: |
