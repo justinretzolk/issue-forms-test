@@ -6,11 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        # Thank you for providing feedback on our beta release!
+        ## Thank you for providing feedback on our beta release!
 
         Before submission, we ask that you first [search existing issues](https://github.com/hashicorp/terraform-provider-aws/issues?q=is%3Aissue%20state%3Aopen%20label%3Abeta-feedback) to see if someone else may have experienced the same issue or provided similar feedback. This helps to keep all relevant information in one place, including any potential workarounds.
 
-        ## Terraform Core Issues
+        ### Terraform Core Issues
 
         We ask that you consider whether an issues may be related to Terraform Core. If you're experiencing issues similar to the following examples, we recommend [opening an issue](https://github.com/hashicorp/terraform/issues/new/choose) in the Terraform Core repository instead:
 
@@ -84,7 +84,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Providing Configurations and Logging
+        ### Providing Configurations and Logging
 
         When providing a reproduction configuration and/or debug logging, please paste, upload, or link to a file or [public Gist](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists) containing the relevant information.
 
@@ -94,8 +94,8 @@ body:
 
         Configurations should be applyable with minimal modifications, and should not rely on external modules. This helps maintainers and contributors efficiently reproduce issues and implement acceptance tests to ensure any fixes do not regress.
 
-        > [!IMPORTANT]
-        > **Bug reports without a functional and standalone sample configuration may be closed without further investigation.**
+        > [!WARNING]
+        > Bug reports without a functional and standalone sample configuration may be closed without further investigation.
 
   - type: textarea
     id: tf_config
